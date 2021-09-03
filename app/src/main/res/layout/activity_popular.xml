@@ -6,4 +6,139 @@
     android:layout_height="match_parent"
     tools:context=".popular">
 
+    <TextView
+        android:id="@+id/popular_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/popular_refresh"
+
+        android:layout_marginTop="10dp"
+        android:text="영광군 인기 게시판"
+        android:textSize="30dp"
+        />
+
+    <ImageButton
+        android:id="@+id/popular_refresh"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/main_refresh"
+        android:background="#000000"
+
+        android:scaleType="centerCrop"
+
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/popular_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/popular_search"
+        />
+
+    <ImageButton
+        android:id="@+id/popular_search"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/main_search"
+        android:background="#000000"
+
+        android:scaleType="centerCrop"
+
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/popular_refresh"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ListView
+        android:id="@+id/main_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:descendantFocusability="blocksDescendants"
+        android:clickable="true"
+
+        app:layout_constraintTop_toBottomOf="@+id/popular_title"
+        app:layout_constraintBottom_toTopOf="@+id/my_page_button2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:listitem="@layout/main_list"
+
+        android:layout_marginLeft="15dp"
+        />
+
+    <Button
+        android:id="@+id/main_page_button2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toLeftOf="@+id/popular_page_button2"
+        android:text="전체 게시판"
+        android:textSize="13dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000"
+
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/popular_page_button2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/main_page_button2"
+
+        app:layout_constraintRight_toLeftOf="@+id/report_page_button2"
+        android:text="인기글"
+        android:textSize="13dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#50BCDF"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/report_page_button2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/popular_page_button2"
+        app:layout_constraintRight_toLeftOf="@+id/my_page_button2"
+        android:text="게시글 작성"
+        android:textSize="13dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/my_page_button2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/report_page_button2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="내 정보"
+        android:textSize="13dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".my_page">
 
+    <TextView
+        android:id="@+id/my_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 정보"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="커뮤니티"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/my_page_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="30"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
