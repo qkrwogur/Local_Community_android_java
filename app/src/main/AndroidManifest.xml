@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LocalCommunity">
         <activity
+            android:name=".Update"
+            android:exported="true" />
+        <activity
+            android:name=".Detail"
+            android:exported="true" />
+        <activity
+            android:name=".Write"
+            android:exported="true" />
+        <activity
+            android:name=".Report"
+            android:exported="true" />
+        <activity
             android:name=".gps"
             android:exported="true" />
         <activity
