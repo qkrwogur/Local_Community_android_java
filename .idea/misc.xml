@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/2021_2/LocalCommunity/app/src/main/res/layout/activity_main.xml" value="0.34556159420289856" />
+        <entry key="..\:/2021_2/LocalCommunity/app/src/main/res/layout/activity_detail.xml" value="0.359375" />
+        <entry key="..\:/2021_2/LocalCommunity/app/src/main/res/layout/activity_gps.xml" value="0.359375" />
+        <entry key="..\:/2021_2/LocalCommunity/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/2021_2/LocalCommunity/app/src/main/res/layout/activity_my_page.xml" value="0.359375" />
       </map>
     </option>
   </component>
