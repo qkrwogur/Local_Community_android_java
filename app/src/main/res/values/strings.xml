@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Local Community</string>
+    <string name="report_rule_content">
+        커뮤니티 신고규칙커뮤니티 신고규칙커뮤니티 신고규칙
+        커뮤니티 신고규칙커뮤니티 신고규칙커뮤니티 신고규칙
+        커뮤니티 신고규칙커뮤니티 신고규칙커뮤니티 신고규칙
+        커뮤니티 신고규칙커뮤니티 신고규칙커뮤니티 신고규칙
+        </string>
+    <string name="community_rule_content">
+        커뮤니티 이용규칙커뮤니티 이용규칙커뮤니티 이용규칙
+        커뮤니티 이용규칙커뮤니티 이용규칙커뮤니티 이용규칙
+        커뮤니티 이용규칙커뮤니티 이용규칙커뮤니티 이용규칙
+        커뮤니티 이용규칙커뮤니티 이용규칙커뮤니티 이용규칙
+    </string>
 </resources>
