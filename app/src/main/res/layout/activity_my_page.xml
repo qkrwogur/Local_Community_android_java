@@ -20,7 +20,8 @@
         />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/my_page_community"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
 
         android:text="커뮤니티"
@@ -28,7 +29,211 @@
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/my_page_title"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_margin="30"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="30dp"
+
+        />
+    <LinearLayout
+        android:id="@+id/my_page_community_liner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_page_community"
+        android:background="#808080"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="내 게시글"
+            android:gravity="left"
+
+            android:backgroundTint="#808080"
+            style="?android:attr/borderlessButtonStyle"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/my_page_information"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="내 계정"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/my_page_community_liner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/my_page_information_liner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_page_information"
+        android:background="#808080"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="내 아이디"
+            android:gravity="left"
+
+            android:backgroundTint="#808080"
+            style="?android:attr/borderlessButtonStyle"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="내 위치"
+            android:gravity="left"
+
+            android:backgroundTint="#808080"
+            style="?android:attr/borderlessButtonStyle"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/my_page_company"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="문의 사항"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/my_page_information_liner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/my_page_company_liner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_page_company"
+        android:background="#808080"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="운영 정책"
+            android:gravity="left"
+
+            android:backgroundTint="#808080"
+            style="?android:attr/borderlessButtonStyle"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="개발자 소개"
+            android:gravity="left"
+
+            android:backgroundTint="#808080"
+            style="?android:attr/borderlessButtonStyle"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_page_button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toLeftOf="@+id/popular_page_button3"
+        android:text="전체 게시판"
+        android:textSize="13dp"
+
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000"
+
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/popular_page_button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/main_page_button3"
+
+        app:layout_constraintRight_toLeftOf="@+id/report_page_button3"
+        android:text="인기글"
+        android:textSize="13dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/report_page_button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/popular_page_button3"
+        app:layout_constraintRight_toLeftOf="@+id/my_page_button3"
+        android:text="게시글 작성"
+        android:textSize="13dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/my_page_button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/report_page_button3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="내 정보"
+        android:textSize="13dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#50BCDF"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
