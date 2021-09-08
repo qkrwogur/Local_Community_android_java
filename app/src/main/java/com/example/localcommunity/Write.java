@@ -1,8 +1,11 @@
 package com.example.localcommunity;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.localcommunity.R;
 
 public class Write extends AppCompatActivity {
 
@@ -11,7 +14,9 @@ public class Write extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write);
 
-        getSupportActionBar().setTitle("게시글 작성");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 뒤로가기 버튼 https://dreamaz.tistory.com/109
+        // 액션바 설정
+        ActionBar supportActionBar = getSupportActionBar();
+        supportActionBar.setTitle("게시글 작성");
+        supportActionBar.setDisplayHomeAsUpEnabled(true);
     }
 }

@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name="report">
+        <item>신고 카테고리를 선택하세요</item>
         <item>욕설 비하</item>
         <item>유출/사칭/사기</item>
         <item>상업적 광고 및 판매</item>

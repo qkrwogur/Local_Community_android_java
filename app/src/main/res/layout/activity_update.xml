@@ -34,15 +34,28 @@
         app:layout_constraintTop_toBottomOf="@+id/update_edit_title" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/update_linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/update_edit_content">
+        app:layout_constraintTop_toBottomOf="@+id/update_edit_content"
+        android:orientation="horizontal" >
 
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
@@ -62,7 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/write_linearLayout" />
 
     <TextView
         android:id="@+id/update_rule_content"
@@ -79,11 +92,13 @@
         app:layout_constraintTop_toBottomOf="@+id/update_rule_title" />
 
     <Button
-        android:id="@+id/write_button"
+        android:id="@+id/update_button"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="32dp"
         android:text="완료"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
