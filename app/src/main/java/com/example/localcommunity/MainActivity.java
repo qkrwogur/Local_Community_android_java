@@ -37,13 +37,11 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-
         //버튼
         main = findViewById(R.id.main_page_button1);
         popular = findViewById(R.id.popular_page_button1);
         report =  findViewById(R.id.report_page_button1);
         my_page =  findViewById(R.id.my_page_button1);
-
 
         //이미지 버튼
         refresh = findViewById(R.id.main_refresh);
