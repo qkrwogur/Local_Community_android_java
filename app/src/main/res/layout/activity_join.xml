@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    style="windowNo">
+
+    <TextView
+        android:layout_weight="0.5"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="우리 동네"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center" >
+
+        <EditText
+            android:id="@+id/join_edit_id"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:hint="아이디를 입력해주세요"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:ems="20"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/join_edit_password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:hint="비밀번호"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:ems="10"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/join_edit_password_confirm"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:hint="비밀번호 획인"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:ems="10"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/join_edit_phone"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:hint="전화번호"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:ems="10"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/join_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="가입"
+            android:onClick="join"
+            android:background="@drawable/btn_round"
+            android:textSize="18sp"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/join_button_cancel"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="취소"
+            android:onClick="cancel"
+            android:background="@drawable/btn_round"
+            android:textSize="18sp"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+</LinearLayout>
