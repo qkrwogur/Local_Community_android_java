@@ -37,6 +37,8 @@ public class gps extends AppCompatActivity
 
     Button ShowLocationButton,go_main,retry;
 
+    String state;
+    String city;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -74,8 +76,17 @@ public class gps extends AppCompatActivity
                 double longitude = gpsTracker.getLongitude();
 
                 String address = getCurrentAddress(latitude, longitude);
-                address = address.substring(address.indexOf(" ")+1); //문장 자르기 '대한민국' 삭제
-                textview_address.setText(address);
+
+                System.out.println(address);
+
+
+                state = address.substring(address.indexOf(" ")+1);//인천광역시 연수구 송도
+                city = state.substring(state.indexOf(" ")+1);//연수구 송도
+
+                state = state.substring(0, state.indexOf(" "));//인천광역시
+                city = city.substring(0, city.indexOf(" "));//연수구
+
+                textview_address.setText(state+" "+city);
 
 
 
@@ -89,11 +100,18 @@ public class gps extends AppCompatActivity
             @Override
             public void onClick(View view) {
 
+                String address;
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-                overridePendingTransition(0, 0);
+                address = state+city;
 
+                City city = new City(address);
+                SessionCity sessionCity = new SessionCity(gps.this);
+                sessionCity.saveSession(city);
                 finish();
+                startActivity(intent);
+
+
+
             }
         });
 
@@ -107,9 +125,16 @@ public class gps extends AppCompatActivity
 
                 String address = getCurrentAddress(latitude, longitude);
 
-                address = address.substring(address.indexOf(" ")+1); //문장 자르기 '대한민국' 삭제
 
-                textview_address.setText(address);
+
+                state = address.substring(address.indexOf(" ")+1);//인천광역시 연수구 송도
+                city = state.substring(state.indexOf(" ")+1);//연수구 송도
+
+                state = state.substring(0, address.indexOf(" "));//인천광역시
+                city = city.substring(0, address.indexOf(" "));//연수구
+
+                textview_address.setText(state+" "+city);
+
 
             }
         });

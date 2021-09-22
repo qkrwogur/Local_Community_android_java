@@ -28,10 +28,16 @@ public class MainActivity extends AppCompatActivity {
 
     Button main,popular,report,my_page;
     ImageButton refresh,search;
+    TextView main_title;
+
+    String city;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //지역 체크 지역 값 가져 오기
+        checkCitySession();
 
         //액선바 없애기
         ActionBar actionBar = getSupportActionBar();
@@ -47,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
         refresh = findViewById(R.id.main_refresh);
         search = findViewById(R.id.main_search);
 
+        //테스트 뷰
+        main_title = findViewById(R.id.main_title);
+        main_title.setText(city);
+
+        System.out.println(city);
+        System.out.println("hello");
         main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         my_page.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), gps.class);
+                Intent intent = new Intent(getApplicationContext(), my_page.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
 
@@ -216,4 +228,19 @@ public class MainActivity extends AppCompatActivity {
         int like;
         int comment;
     }
+
+    private void checkCitySession(){
+        SessionCity sessionCity = new SessionCity(MainActivity.this);
+        city = sessionCity.getSession();
+
+        if(city == ""){
+            Intent intent = new Intent(MainActivity.this, gps.class);
+            startActivity(intent);
+            finish();
+        }else{
+            //do nothing
+        }
+
+    }
+
 }

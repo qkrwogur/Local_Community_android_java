@@ -12,7 +12,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LocalCommunity">
+        android:theme="@style/Theme.LocalCommunity"
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".Join"
             android:exported="true" />
@@ -42,7 +43,9 @@
             android:exported="true" />
         <activity
             android:name=".gps"
-            android:exported="true" />
+            android:exported="true" >
+        </activity>
+
         <activity
             android:name=".my_page"
             android:exported="true" />

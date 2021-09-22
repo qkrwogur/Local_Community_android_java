@@ -34,6 +34,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        checkSession();
         // 액션바 설정
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
@@ -45,7 +46,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void login(View view) {
-        String url = "http://192.168.0.25:8080/member/login";
+        String url = "http://192.168.0.62:8080/member/login";
 
         Map<String, String> postParam= new HashMap<>();
         postParam.put("memberId", editLogId.getText().toString());
@@ -60,7 +61,12 @@ public class Login extends AppCompatActivity {
 
                             if (result.equals("success")) {
                                 Toast.makeText(getApplicationContext(), "로그인을 성공했습니다", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                Intent intent = new Intent(getApplicationContext(), gps.class);
+
+                                User user = new User(editLogId.getText().toString());
+                                SessionID sessionID = new SessionID(Login.this);
+                                sessionID.saveSession(user);
+
                                 finish();
                                 startActivity(intent);
                             } else {
@@ -81,6 +87,31 @@ public class Login extends AppCompatActivity {
 
     public void moveJoinForm(View view) {
         Intent intent = new Intent(getApplicationContext(), Join.class);
+        startActivity(intent);
+    }
+
+    private void checkSession() {
+        //check if user is logged in
+        //if user is logged in --> move to mainActivity
+
+        SessionID sessionID = new SessionID(Login.this);
+
+        String userID = sessionID.getSession();
+
+
+
+        if(userID != ""){
+            //user id logged in and so move to mainActivity
+            moveToMainActivity();
+            finish();
+        }
+        else{
+            //do nothing
+        }
+    }
+    private void moveToMainActivity() {
+        Intent intent = new Intent(Login.this, gps.class);
+        //intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 }

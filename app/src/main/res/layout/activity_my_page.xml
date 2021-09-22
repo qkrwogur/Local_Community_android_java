@@ -87,10 +87,11 @@
         >
 
         <Button
+            android:id="@+id/myPage_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:text="내 아이디"
+            android:text="로그아웃"
             android:gravity="left"
 
             android:backgroundTint="#808080"
@@ -98,10 +99,11 @@
             android:textStyle="bold"
             />
         <Button
+            android:id="@+id/gpsChange"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:text="내 위치"
+            android:text="내 위치 변경"
             android:gravity="left"
 
             android:backgroundTint="#808080"
