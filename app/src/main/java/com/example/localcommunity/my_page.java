@@ -1,5 +1,6 @@
 package com.example.localcommunity;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,6 +10,7 @@ import android.widget.Button;
 
 public class my_page extends AppCompatActivity {
 
+    Button main,popular,report,my_page;
     Button logout,gpsChange;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +19,15 @@ public class my_page extends AppCompatActivity {
 
         logout=findViewById(R.id.myPage_logout);
         gpsChange=findViewById(R.id.gpsChange);
+
+        main = findViewById(R.id.main_page_button3);
+        popular = findViewById(R.id.popular_page_button3);
+        report =  findViewById(R.id.report_page_button3);
+        my_page =  findViewById(R.id.my_page_button3);
+
+        //액선바 없애기
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +58,50 @@ public class my_page extends AppCompatActivity {
                 startActivity(intent);
                 finish();
 
+            }
+        });
+
+        main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+
+                finish();
+            }
+        });
+
+        popular.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), popular.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+
+                finish();
+            }
+        });
+
+        report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ReportActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+
+
+            }
+        });
+
+        my_page.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), my_page.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+
+                finish();
             }
         });
     }

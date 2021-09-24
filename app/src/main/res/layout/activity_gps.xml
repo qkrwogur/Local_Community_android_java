@@ -4,31 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".gps">
+    tools:context=".gps"
+
+    android:background="@color/black"
+    >
 
     <TextView
         android:id="@+id/gps_location_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/gps_button_ok"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inchan"
+        app:layout_constraintBottom_toTopOf="@+id/gps_button_go"
 
-        android:text="지역이름을 여기에 출력"
-        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:text=""
+        android:textSize="30dp"
         />
 
     <Button
         android:id="@+id/gps_button_ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-
+        app:layout_constraintTop_toTopOf="parent"
         android:text="나의 위치 찾기"
         />
 
@@ -42,8 +46,9 @@
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/inchan"
+        app:layout_constraintBottom_toTopOf="@+id/gps_button_not"
 
         android:text="위치가 여기가 맞습니다."
         />
@@ -58,10 +63,23 @@
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gps_button_ok"
+        app:layout_constraintTop_toBottomOf="@+id/gps_button_go"
         android:layout_marginTop="20dp"
 
         android:text="위치 여기 아닙니다. 위치 다시 찾기"
+
+        />
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/inchan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/inchan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

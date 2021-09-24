@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".my_page">
+    tools:context=".my_page"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/my_page_title"
@@ -16,7 +17,8 @@
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="25dp"
+        android:layout_margin="30dp"
+        android:textColor="@color/white"
         />
 
     <TextView
@@ -31,6 +33,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_margin="30dp"
+        android:textColor="@color/white"
 
         />
     <LinearLayout
@@ -71,6 +74,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_margin="30dp"
+        android:textColor="@color/white"
         />
 
     <LinearLayout
@@ -124,6 +128,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_margin="30dp"
+        android:textColor="@color/white"
         />
 
     <LinearLayout
@@ -178,7 +183,7 @@
 
 
         android:backgroundTint="#FFFFFF"
-        android:textColor="#000000"
+        android:textColor="@color/white"
 
 
         style="?android:attr/borderlessButtonStyle"
@@ -197,7 +202,7 @@
         android:textSize="13dp"
 
         android:backgroundTint="#FFFFFF"
-        android:textColor="#000000"
+        android:textColor="@color/white"
 
         style="?android:attr/borderlessButtonStyle"
         android:textStyle="bold"
@@ -215,7 +220,7 @@
         android:textSize="13dp"
 
         android:backgroundTint="#FFFFFF"
-        android:textColor="#000000"
+        android:textColor="@color/white"
 
         style="?android:attr/borderlessButtonStyle"
         android:textStyle="bold"
@@ -232,7 +237,7 @@
         android:textSize="13dp"
 
         android:backgroundTint="#FFFFFF"
-        android:textColor="#50BCDF"
+        android:textColor="@color/purple_200"
 
         style="?android:attr/borderlessButtonStyle"
         android:textStyle="bold"

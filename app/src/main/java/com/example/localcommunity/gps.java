@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,14 +38,19 @@ public class gps extends AppCompatActivity
 
     Button ShowLocationButton,go_main,retry;
 
+    ImageView inchan;
+
+
     String state;
     String city;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gps);
+
 
 
         //액선바 없애기
@@ -66,6 +72,8 @@ public class gps extends AppCompatActivity
         ShowLocationButton = findViewById(R.id.gps_button_ok);
         go_main = findViewById(R.id.gps_button_go);
         retry = findViewById(R.id.gps_button_not);
+
+        inchan =  findViewById(R.id.inchan);
 
         ShowLocationButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,6 +101,7 @@ public class gps extends AppCompatActivity
                 ShowLocationButton.setVisibility(View.INVISIBLE);
                 go_main.setVisibility(View.VISIBLE);
                 retry.setVisibility(View.VISIBLE);
+                inchan.setVisibility(View.VISIBLE);
             }
         });
 

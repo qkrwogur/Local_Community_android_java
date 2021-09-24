@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".popular">
+    tools:context=".popular"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/popular_title"
@@ -17,6 +18,8 @@
         android:layout_marginTop="10dp"
         android:text="영광군 인기 게시판"
         android:textSize="30dp"
+        android:textColor="@color/white"
+
         />
 
     <ImageButton
@@ -66,7 +69,6 @@
         app:layout_constraintRight_toRightOf="parent"
         tools:listitem="@layout/main_list"
 
-        android:layout_marginLeft="15dp"
         />
 
     <Button
@@ -82,7 +84,7 @@
         android:textSize="13dp"
 
         android:backgroundTint="#FFFFFF"
-        android:textColor="#000000"
+        android:textColor="@color/white"
 
 
         style="?android:attr/borderlessButtonStyle"
@@ -101,7 +103,7 @@
         android:textSize="13dp"
 
         android:backgroundTint="#FFFFFF"
-        android:textColor="#50BCDF"
+        android:textColor="@color/purple_200"
 
         style="?android:attr/borderlessButtonStyle"
         android:textStyle="bold"
@@ -119,7 +121,7 @@
         android:textSize="13dp"
 
         android:backgroundTint="#FFFFFF"
-        android:textColor="#000000"
+        android:textColor="@color/white"
 
         style="?android:attr/borderlessButtonStyle"
         android:textStyle="bold"
@@ -136,7 +138,7 @@
         android:textSize="13dp"
 
         android:backgroundTint="#FFFFFF"
-        android:textColor="#000000"
+        android:textColor="@color/white"
 
         style="?android:attr/borderlessButtonStyle"
         android:textStyle="bold"
