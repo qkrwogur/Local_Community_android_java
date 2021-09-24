@@ -43,7 +43,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_page_community"
-        android:background="#808080"
+
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         >
@@ -55,9 +55,10 @@
             android:text="내 게시글"
             android:gravity="left"
 
-            android:backgroundTint="#808080"
+            android:background="@drawable/btn_round"
             style="?android:attr/borderlessButtonStyle"
             android:textStyle="bold"
+
             />
     </LinearLayout>
 
@@ -84,7 +85,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_page_information"
-        android:background="#808080"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:orientation="vertical"
@@ -98,10 +98,14 @@
             android:text="로그아웃"
             android:gravity="left"
 
-            android:backgroundTint="#808080"
+            android:background="@drawable/btn_round"
             style="?android:attr/borderlessButtonStyle"
             android:textStyle="bold"
             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="2dp"/>
         <Button
             android:id="@+id/gpsChange"
             android:layout_width="match_parent"
@@ -110,7 +114,7 @@
             android:text="내 위치 변경"
             android:gravity="left"
 
-            android:backgroundTint="#808080"
+            android:background="@drawable/btn_round"
             style="?android:attr/borderlessButtonStyle"
             android:textStyle="bold"
             />
@@ -138,7 +142,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_page_company"
-        android:background="#808080"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:orientation="vertical"
@@ -152,10 +155,14 @@
             android:text="운영 정책"
             android:gravity="left"
 
-            android:backgroundTint="#808080"
+            android:background="@drawable/btn_round"
             style="?android:attr/borderlessButtonStyle"
             android:textStyle="bold"
             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="2dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -163,7 +170,7 @@
             android:text="개발자 소개"
             android:gravity="left"
 
-            android:backgroundTint="#808080"
+            android:background="@drawable/btn_round"
             style="?android:attr/borderlessButtonStyle"
             android:textStyle="bold"
             />

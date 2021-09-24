@@ -5,14 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".Detail">
+    tools:context=".Detail"
+    android:background="@color/black"
+    >
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:padding="10dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="17sp"
         android:text="카드를 주었습니다.\n\n동네 마트 앞에 있었어요.\n\n마트에 맡겼어요."
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,13 +48,18 @@
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/main_list_like"
             tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="344dp" />
+            tools:layout_editor_absoluteY="344dp"
+            android:background="@color/black"
+            />
 
         <TextView
             android:layout_width="20sp"
             android:layout_height="50sp"
             android:layout_marginLeft="5dp"
-            android:text="1" />
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -61,13 +68,18 @@
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/main_list_comment"
             tools:layout_editor_absoluteX="197dp"
-            tools:layout_editor_absoluteY="165dp" />
+            tools:layout_editor_absoluteY="165dp"
+            android:background="@color/black"
+            />
 
         <TextView
             android:layout_width="20sp"
             android:layout_height="50sp"
             android:layout_marginLeft="5dp"
-            android:text="1" />
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
 
         <Button
             android:id="@+id/button"
@@ -75,7 +87,7 @@
             android:layout_height="50dp"
             android:text="수정"
             android:textSize="16sp"
-            android:textColor="@color/cardview_dark_background"
+            android:textColor="@color/white"
             android:background="#00ff0000"
             android:layout_marginLeft="100dp"
             tools:layout_editor_absoluteX="75dp"
@@ -87,7 +99,7 @@
             android:layout_height="50dp"
             android:text="삭제"
             android:textSize="16sp"
-            android:textColor="@color/cardview_dark_background"
+            android:textColor="@color/white"
             android:background="#00ff0000"
             tools:layout_editor_absoluteX="183dp"
             tools:layout_editor_absoluteY="286dp" />
