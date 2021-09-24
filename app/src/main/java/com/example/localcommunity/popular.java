@@ -67,7 +67,7 @@ public class popular extends AppCompatActivity {
         report.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Report.class);
+                Intent intent = new Intent(getApplicationContext(), ReportActivity.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
 

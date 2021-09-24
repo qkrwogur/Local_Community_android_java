@@ -23,7 +23,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Join extends AppCompatActivity {
+public class JoinActivity extends AppCompatActivity {
 
     EditText editJoinId, editJoinPwd, editJoinPwdConfirm, editJoinPhone;
     private static final String TAG = "JOIN";
@@ -71,7 +71,7 @@ public class Join extends AppCompatActivity {
                                     String result = response.getString("result");
                                     if (result.equals("success")) {
                                         Toast.makeText(getApplicationContext(), "회원가입을 성공했습니다", Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(getApplicationContext(), Login.class);
+                                        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                                         finish();
                                         startActivity(intent);
                                     } else if (result.equals("duplicate")){
@@ -95,7 +95,7 @@ public class Join extends AppCompatActivity {
     }
 
     public void cancel(View view) {
-        Intent intent = new Intent(getApplicationContext(), Login.class);
+        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
         startActivity(intent);
         finish();
     }

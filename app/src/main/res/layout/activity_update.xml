@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".Report">
+    tools:context=".ReportActivity">
 
     <EditText
         android:id="@+id/update_edit_title"

@@ -23,7 +23,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = "LOGIN";
     EditText editLogId, editLogPwd;
@@ -46,7 +46,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void login(View view) {
-        String url = "http://192.168.0.62:8080/member/login";
+        String url = "http://172.30.1.59:8080/member/login";
 
         Map<String, String> postParam= new HashMap<>();
         postParam.put("memberId", editLogId.getText().toString());
@@ -64,7 +64,7 @@ public class Login extends AppCompatActivity {
                                 Intent intent = new Intent(getApplicationContext(), gps.class);
 
                                 User user = new User(editLogId.getText().toString());
-                                SessionID sessionID = new SessionID(Login.this);
+                                SessionID sessionID = new SessionID(LoginActivity.this);
                                 sessionID.saveSession(user);
 
                                 finish();
@@ -86,7 +86,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void moveJoinForm(View view) {
-        Intent intent = new Intent(getApplicationContext(), Join.class);
+        Intent intent = new Intent(getApplicationContext(), JoinActivity.class);
         startActivity(intent);
     }
 
@@ -94,7 +94,7 @@ public class Login extends AppCompatActivity {
         //check if user is logged in
         //if user is logged in --> move to mainActivity
 
-        SessionID sessionID = new SessionID(Login.this);
+        SessionID sessionID = new SessionID(LoginActivity.this);
 
         String userID = sessionID.getSession();
 
@@ -110,7 +110,7 @@ public class Login extends AppCompatActivity {
         }
     }
     private void moveToMainActivity() {
-        Intent intent = new Intent(Login.this, gps.class);
+        Intent intent = new Intent(LoginActivity.this, gps.class);
         //intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".Report">
+    tools:context=".ReportActivity"
+    android:background="@color/black" >
 
     <EditText
         android:id="@+id/report_edit_title"
@@ -17,7 +18,9 @@
         android:layout_marginTop="24dp"
         android:padding="10dp"
         android:background="@drawable/edittext_rounded"
-        android:hint="제목" />
+        android:hint="제목"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
 
     <Spinner
         android:id="@+id/report_spinner"
@@ -40,7 +43,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/report_spinner"
         android:background="@drawable/edittext_rounded"
-        android:hint="상세 내용을 입력해주세요" />
+        android:hint="상세 내용을 입력해주세요"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/report_rule_title"
@@ -48,7 +53,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="24dp"
         android:text="커뮤니티 신고규칙"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="17sp"
         android:padding="10dp"
@@ -61,12 +66,13 @@
         android:layout_height="100dp"
         android:layout_marginTop="8dp"
         android:text="@string/report_rule_content"
-        android:textColor="@color/cardview_dark_background"
+        android:textColor="@color/white"
         android:textSize="14sp"
         android:padding="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/report_rule_title" />
 
+    <!--
     <Button
         android:id="@+id/report_button"
         android:layout_width="match_parent"
@@ -74,6 +80,23 @@
         android:layout_marginTop="32dp"
         android:text="완료"
         android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_rule_content" /> -->
+
+    <TextView
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:background="@drawable/btn_round"
+        android:onClick="submitReport"
+        android:text="완료"
+        android:textSize="18sp"
+        android:textColor="#fff"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

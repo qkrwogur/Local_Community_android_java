@@ -28,7 +28,7 @@ public class my_page extends AppCompatActivity {
                 sessionCity.removeSession();
 
 
-                Intent intent=new Intent(getApplicationContext(),Login.class);
+                Intent intent=new Intent(getApplicationContext(), LoginActivity.class);
 
                 startActivity(intent);
                 finish();

@@ -9,7 +9,7 @@ import android.widget.Spinner;
 
 import com.example.localcommunity.R;
 
-public class Report extends AppCompatActivity {
+public class ReportActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

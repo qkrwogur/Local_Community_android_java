@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/black"
+    style="windowNo">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/seoul" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/bmdohyeon"
+        android:gravity="center"
+        android:text="우리 동네"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="어디서나 어느 기기에서든 익명성이 보장된 이야기를 시작하세요."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/bmhannapro"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="225dp"
+        android:gravity="center"
+        android:background="@drawable/btn_round"
+        android:onClick="moveJoinForm"
+        android:text="아이디 만들기!"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:fontFamily="@font/bmhannapro" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="이미 아이디가 있다면 로그인하세요!"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bmhannaair"
+        android:layout_gravity="center"
+        android:onClick="moveLoginForm"/>
+
+</LinearLayout>

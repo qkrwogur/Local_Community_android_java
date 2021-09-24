@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="1"
+    android:background="@color/black"
     style="windowNo">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/seoul" />
 
     <TextView
         android:layout_weight="0.8"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:text="우리 동네"
-        android:textColor="@color/black"
-        android:textStyle="bold"
+        android:textColor="@color/white"
         android:textSize="40sp"
+        android:fontFamily="@font/bmdohyeon"
         android:gravity="center"
         android:layout_gravity="center" />
 
@@ -24,6 +33,9 @@
         android:inputType="text"
         android:hint="아이디를 입력해주세요"
         android:textSize="20dp"
+        android:fontFamily="@font/bmhannaair"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:singleLine="true"
         android:ems="10"
         android:layout_gravity="center" />
@@ -35,6 +47,9 @@
         android:inputType="textPassword"
         android:hint="비밀번호"
         android:textSize="20dp"
+        android:fontFamily="@font/bmhannaair"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:singleLine="true"
         android:ems="10"
         android:layout_gravity="center" />
@@ -44,6 +59,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="회원가입"
+        android:fontFamily="@font/bmhannaair"
+        android:textColor="@color/white"
         android:textSize="15dp"
         android:layout_marginLeft="60dp"
         android:onClick="moveJoinForm"/>
@@ -58,6 +75,7 @@
         android:background="@drawable/btn_round"
         android:onClick="login"
         android:text="로그인"
+        android:fontFamily="@font/bmhannapro"
         android:textSize="18sp"
         android:textColor="#fff" />
 
