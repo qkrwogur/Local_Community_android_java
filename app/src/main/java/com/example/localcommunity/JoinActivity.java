@@ -47,7 +47,7 @@ public class JoinActivity extends AppCompatActivity {
     }
 
     public void join(View view) {
-        String url = "http://192.168.0.62:8080/member/join";
+        String url = "http://192.168.0.25:8080/member/join";
 
         String id = editJoinId.getText().toString();
         String pwd = editJoinPwd.getText().toString();

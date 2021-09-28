@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
-        String url = "http://172.30.1.59:8080/member/login";
+        String url = "http://192.168.0.25:8080/member/login";
 
         Map<String, String> postParam= new HashMap<>();
         postParam.put("memberId", editLogId.getText().toString());

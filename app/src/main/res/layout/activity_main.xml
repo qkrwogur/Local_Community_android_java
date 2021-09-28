@@ -68,6 +68,8 @@
         app:layout_constraintRight_toRightOf="parent"
         tools:listitem="@layout/main_list"
 
+        android:layout_margin="15dp"
+
 
         />
 
