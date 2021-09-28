@@ -130,9 +130,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         //테스트 데이터 입력
-        for(int i=0;i<10;i++){
-            boardList.add(new ListBord("무야호","좋아했다.","9월12일13시",7,7));
-        }
+
+        boardList.add(new ListBord("돈까스 극장 고양이","돈까스 극장 주변에 고양이 몇마리 보이는데 혹시 밥주는곳이 따로 있나요?","9월24일13시",2,3));
+        boardList.add(new ListBord("태전동 필라테스","태전동에 필라테스, 요가 괜찮은곳 추천좀 해주세요 애기낳고 운동하고 살 빼려구요","9월24일9시",2,2));
+        boardList.add(new ListBord("카드 잃어버리신 분","gs25 앞에서 카드를 잃어버렸습니다.","9월23일22시",2,1));
+        boardList.add(new ListBord("동네에 손목시계 배터리 교체","손목시계 베터리 저렴하게 교체 가능한곡 아시는분 알려주세요~","9월23일20시",2,1));
+        boardList.add(new ListBord("닥터페퍼 판매하는 곳","닥터페퍼 오프라인으로 판매하는곳 알고 있스면 알려 주세요 ㅎㅎ","9월23일20시",0,1));
+        boardList.add(new ListBord("코로나 조심해용","오늘 우리동네에서 코로나 확진자가 46나왔습니다. 다들 조심 하세요","9월23일20시",2,1));
+        boardList.add(new ListBord("pc방 영업하는 곳 있나요?","주변에 pc방 영업하는고이 있으면 알려주세요","9월23일20시",0,1));
+        boardList.add(new ListBord("좋은 카페를가 소개 합니다.","연수구에 이번  ","9월23일20시",2,1));
 
 
 

@@ -115,9 +115,19 @@ public class popular extends AppCompatActivity {
 
 
         //테스트 데이터 입력
-        for(int i=0;i<10;i++){
-            boardList.add(new ListBord("무한","좋아했다.","9월12일13시",7,7));
-        }
+
+        boardList.add(new ListBord("인기글 1",".","9월12일13시",7,7));
+        boardList.add(new ListBord("인기글 2",".","9월12일13시",7,7));
+        boardList.add(new ListBord("인기글 3",".","9월12일13시",7,7));
+        boardList.add(new ListBord("인기글 4",".","9월12일13시",7,7));
+        boardList.add(new ListBord(" ",".","9월12일13시",7,7));
+        boardList.add(new ListBord("저희집 막내 덕구 한 번 보고 가세요",".","9월14일15시",80,89));
+        boardList.add(new ListBord("마린pc방 돈안내고 간 학생 찾습니다.","9월 12일 저녁 5시에 마린pc 방에서 후불로 하고 돈아내고 도망간  초등학생 찾습니다.","9월13일9시",25,45));
+        boardList.add(new ListBord("브라질리언 왁싱은 브라질 사람만 할 수 있는 거임?","미안 점심 메뉴 추천좀","9월12일14시",31,34));
+        boardList.add(new ListBord("코로나 의심되면 검사 받자","코로나 걸린거 같고 의심 증상 있으면 주저하지 말고 보건소 갑시다.","9월10일13시",10,10));
+
+
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

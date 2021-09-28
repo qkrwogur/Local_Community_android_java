@@ -56,9 +56,10 @@ public class Detail extends AppCompatActivity {
         ListView listView =(ListView)findViewById(R.id.detail_listView);
         listView.setAdapter(adapter);
 
-        for(int i=0;i<10;i++){
-            commentList.add(new commentBord("무야호","좋아했다."));
-        }
+
+        commentList.add(new commentBord("익명1 : ","정말 감사 합니다. 잃어버려서 걱정 많이 했는데 정말 감사합니다."));
+
+
     }
 
 
