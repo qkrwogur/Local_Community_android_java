@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".ReportActivity">
+    tools:context=".ReportActivity"
+    android:background="@color/black" >
 
     <EditText
         android:id="@+id/write_edit_title"
@@ -18,7 +19,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white" />
 
     <EditText
         android:id="@+id/write_edit_content"
@@ -31,7 +34,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/write_edit_title" />
+        app:layout_constraintTop_toBottomOf="@+id/write_edit_title"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white" />
 
     <LinearLayout
         android:id="@+id/write_linearLayout"
@@ -69,7 +74,7 @@
         android:layout_marginTop="24dp"
         android:padding="10dp"
         android:text="커뮤니티 이용규칙"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,13 +89,14 @@
         android:layout_marginTop="8dp"
         android:padding="10dp"
         android:text="@string/community_rule_content"
-        android:textColor="@color/cardview_dark_background"
+        android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/write_rule_title" />
 
+    <!--
     <Button
         android:id="@+id/write_button"
         android:layout_width="match_parent"
@@ -102,7 +108,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/write_rule_content" />
+        app:layout_constraintTop_toBottomOf="@+id/write_rule_content" /> -->
 
+    <TextView
+        android:id="@+id/write_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:background="@drawable/btn_round"
+        android:onClick="submitBoard"
+        android:text="완료"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/write_rule_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
