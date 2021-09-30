@@ -11,7 +11,7 @@ import android.widget.Button;
 public class my_page extends AppCompatActivity {
 
     Button main,popular,report,my_page;
-    Button logout,gpsChange;
+    Button logout,gpsChange,myPageGo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +19,7 @@ public class my_page extends AppCompatActivity {
 
         logout=findViewById(R.id.myPage_logout);
         gpsChange=findViewById(R.id.gpsChange);
+        myPageGo = findViewById(R.id.my_page_go);
 
         main = findViewById(R.id.main_page_button3);
         popular = findViewById(R.id.popular_page_button3);
@@ -61,6 +62,16 @@ public class my_page extends AppCompatActivity {
             }
         });
 
+        myPageGo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),my_write.class);
+
+                startActivity(intent);
+
+            }
+        });
+
         main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,7 +97,7 @@ public class my_page extends AppCompatActivity {
         report.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ReportActivity.class);
+                Intent intent = new Intent(getApplicationContext(), WriteActivity.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
 

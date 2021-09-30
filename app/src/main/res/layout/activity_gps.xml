@@ -34,6 +34,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:text="나의 위치 찾기"
+        android:background="@drawable/btn_round"
         />
 
     <Button
@@ -51,6 +52,8 @@
         app:layout_constraintBottom_toTopOf="@+id/gps_button_not"
 
         android:text="위치가 여기가 맞습니다."
+
+        android:background="@drawable/btn_round"
         />
 
     <Button
@@ -68,6 +71,7 @@
 
         android:text="위치 여기 아닙니다. 위치 다시 찾기"
 
+        android:background="@drawable/btn_round"
         />
 
     <ImageView
