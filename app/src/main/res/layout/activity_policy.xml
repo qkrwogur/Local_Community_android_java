@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".my_page"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/my_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운영정책"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="30dp"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:id="@+id/policy_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">는
+
+        <!-- 참조한 운영정책: 당근마켓 https://www.daangn.com/wv/faqs/41 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="우리동네는 동네 이웃 간의 연결을 도와 따뜻하고 활발한 교류가 있는 지역 사회를 만들기 위해 노력하고 있습니다.\n\n"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="따뜻한 지역 문화를 만들기 위해서는 우리 모두의 관심과 노력이 필요합니다.\n\n"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="우리는 지역 사회의 규범과 가치관을 존중합니다.\n\n"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="이웃을 현혹하고 속이는 행위는 용인될 수 없습니다.\n\n"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_page_button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toLeftOf="@+id/popular_page_button3"
+        android:text="전체 게시판"
+        android:textSize="13dp"
+
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/white"
+
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/popular_page_button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/main_page_button3"
+
+        app:layout_constraintRight_toLeftOf="@+id/report_page_button3"
+        android:text="인기글"
+        android:textSize="13dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/white"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/report_page_button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/popular_page_button3"
+        app:layout_constraintRight_toLeftOf="@+id/my_page_button3"
+        android:text="게시글 작성"
+        android:textSize="13dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/white"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/my_page_button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/report_page_button3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="내 정보"
+        android:textSize="13dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/purple_200"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

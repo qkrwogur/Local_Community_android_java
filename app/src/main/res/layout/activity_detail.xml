@@ -91,7 +91,8 @@
             android:background="#00ff0000"
             android:layout_marginLeft="100dp"
             tools:layout_editor_absoluteX="75dp"
-            tools:layout_editor_absoluteY="288dp" />
+            tools:layout_editor_absoluteY="288dp"
+            android:onClick="moveUpdateForm" />
 
         <Button
             android:id="@+id/button2"
@@ -102,7 +103,8 @@
             android:textColor="@color/white"
             android:background="#00ff0000"
             tools:layout_editor_absoluteX="183dp"
-            tools:layout_editor_absoluteY="286dp" />
+            tools:layout_editor_absoluteY="286dp"
+            android:onClick="delete" />
 
     </LinearLayout>
 

@@ -25,5 +25,6 @@ public class ReportActivity extends AppCompatActivity {
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.report, android.R.layout.simple_spinner_dropdown_item);
         Spinner reportSpinner = (Spinner) findViewById(R.id.report_spinner);
         reportSpinner.setAdapter(adapter);
+
     }
 }
