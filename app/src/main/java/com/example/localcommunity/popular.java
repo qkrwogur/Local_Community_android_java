@@ -22,6 +22,9 @@ public class popular extends AppCompatActivity {
 
     Button main,popular,report,my_page;
     ImageButton refresh,search;
+    String city;
+
+    TextView popular_text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +33,8 @@ public class popular extends AppCompatActivity {
         //액선바 없애기
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+
+        checkCitySession();
 
 
         //버튼
@@ -41,6 +46,9 @@ public class popular extends AppCompatActivity {
         //이미지 버튼
         refresh = findViewById(R.id.popular_refresh);
         search = findViewById(R.id.popular_search);
+
+        popular_text =findViewById(R.id.popular_title);
+        popular_text.setText(city);
 
         main.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -214,5 +222,19 @@ public class popular extends AppCompatActivity {
         String time;
         int like;
         int comment;
+    }
+
+    private void checkCitySession(){
+        SessionCity sessionCity = new SessionCity(this);
+        city = sessionCity.getSession();
+
+        if(city == ""){
+            Intent intent = new Intent(this, gps.class);
+            startActivity(intent);
+            finish();
+        }else{
+            //do nothing
+        }
+
     }
 }

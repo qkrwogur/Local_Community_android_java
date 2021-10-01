@@ -56,7 +56,8 @@ public class my_write extends AppCompatActivity {
         ListView listView =(ListView)findViewById(R.id.main_list);
         listView.setAdapter(adapter);
 
-        boardList.add(new ListBord("인기글 1",".","9월12일13시",7,7));
+        boardList.add(new ListBord("도서관에 만난 첫 사랑 후기","저번에 첫 사랑을 도서관에 만난 사람 입니다...","9월23일15시",0,1));
+        boardList.add(new ListBord("도서관에 만난 첫 사랑","제가 도서관에 자격증 준비를 하러 갔습니다. 거기서 제 첫사랑을 만났습니다.","9월20일13시",80,71));
     }
 
     class CustomAdapter extends ArrayAdapter<ListBord> {
