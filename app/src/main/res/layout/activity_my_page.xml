@@ -50,14 +50,18 @@
 
         <Button
             android:id="@+id/my_page_go"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:text="내 게시글"
-            android:gravity="left"
-
-            android:background="@drawable/btn_round"
             style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_round"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="내 게시글"
+            android:textColor="@color/white"
+
+            android:textSize="15sp"
             android:textStyle="bold"
 
             />
@@ -97,11 +101,15 @@
             android:layout_height="wrap_content"
 
             android:text="로그아웃"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
             android:gravity="left"
 
             android:background="@drawable/btn_round"
             style="?android:attr/borderlessButtonStyle"
-            android:textStyle="bold"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -113,11 +121,16 @@
             android:layout_height="wrap_content"
 
             android:text="내 위치 변경"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
             android:gravity="left"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
 
             android:background="@drawable/btn_round"
             style="?android:attr/borderlessButtonStyle"
-            android:textStyle="bold"
+
             />
     </LinearLayout>
 
@@ -150,30 +163,41 @@
         >
 
         <Button
+            android:id="@+id/mypage_button_policy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:text="운영 정책"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
             android:gravity="left"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
 
             android:background="@drawable/btn_round"
             style="?android:attr/borderlessButtonStyle"
-            android:textStyle="bold"
+
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="2dp"/>
         <Button
+            android:id="@+id/mypage_button_developer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             android:text="개발자 소개"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
             android:gravity="left"
 
             android:background="@drawable/btn_round"
             style="?android:attr/borderlessButtonStyle"
-            android:textStyle="bold"
+
             />
     </LinearLayout>
 

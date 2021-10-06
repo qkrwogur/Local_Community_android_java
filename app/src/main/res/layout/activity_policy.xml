@@ -24,9 +24,10 @@
         android:id="@+id/policy_linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent">는
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp" >
 
         <!-- 참조한 운영정책: 당근마켓 https://www.daangn.com/wv/faqs/41 -->
 
@@ -38,7 +39,7 @@
             android:layout_marginRight="20dp"
             android:text="우리동네는 동네 이웃 간의 연결을 도와 따뜻하고 활발한 교류가 있는 지역 사회를 만들기 위해 노력하고 있습니다.\n\n"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -48,7 +49,7 @@
             android:layout_marginRight="20dp"
             android:text="따뜻한 지역 문화를 만들기 위해서는 우리 모두의 관심과 노력이 필요합니다.\n\n"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -58,7 +59,7 @@
             android:layout_marginRight="20dp"
             android:text="우리는 지역 사회의 규범과 가치관을 존중합니다.\n\n"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
 
         <TextView
@@ -69,7 +70,7 @@
             android:layout_marginRight="20dp"
             android:text="이웃을 현혹하고 속이는 행위는 용인될 수 없습니다.\n\n"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
     </LinearLayout>
 

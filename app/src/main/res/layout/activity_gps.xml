@@ -13,8 +13,8 @@
         android:id="@+id/gps_location_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inchan"
@@ -27,23 +27,27 @@
 
     <Button
         android:id="@+id/gps_button_ok"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_round"
+        android:text="나의 위치 찾기"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="나의 위치 찾기"
-        android:background="@drawable/btn_round"
-        />
+        app:layout_constraintVertical_bias="0.876" />
 
     <Button
 
         android:visibility="invisible"
 
         android:id="@+id/gps_button_go"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -51,7 +55,10 @@
         app:layout_constraintTop_toBottomOf="@+id/inchan"
         app:layout_constraintBottom_toTopOf="@+id/gps_button_not"
 
-        android:text="위치가 여기가 맞습니다."
+        android:text="위치가 여기가 맞습니다"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/white"
 
         android:background="@drawable/btn_round"
         />
@@ -61,29 +68,33 @@
         android:visibility="invisible"
 
         android:id="@+id/gps_button_not"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gps_button_go"
         android:layout_marginTop="20dp"
 
-        android:text="위치 여기 아닙니다. 위치 다시 찾기"
+        android:text="위치 여기 아닙니다"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/white"
 
         android:background="@drawable/btn_round"
         />
 
     <ImageView
-        android:visibility="invisible"
         android:id="@+id/inchan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/inchan"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

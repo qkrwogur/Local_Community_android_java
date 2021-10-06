@@ -21,7 +21,6 @@
         android:layout_height="40dp"
         android:text="우리 동네"
         android:textColor="@color/white"
-        android:textStyle="bold"
         android:textSize="40sp"
         android:fontFamily="@font/bmdohyeon"
         android:gravity="center"

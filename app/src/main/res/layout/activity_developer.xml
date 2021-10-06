@@ -4,6 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DeveloperActivity">
+    tools:context=".my_page"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/my_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="개발자 소개"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="30dp"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/policy_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="우리 동네는 민인규, 박재혁이 만들었습니다."
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_page_button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toLeftOf="@+id/popular_page_button3"
+        android:text="전체 게시판"
+        android:textSize="13dp"
+
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/white"
+
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/popular_page_button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/main_page_button3"
+
+        app:layout_constraintRight_toLeftOf="@+id/report_page_button3"
+        android:text="인기글"
+        android:textSize="13dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/white"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/report_page_button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/popular_page_button3"
+        app:layout_constraintRight_toLeftOf="@+id/my_page_button3"
+        android:text="게시글 작성"
+        android:textSize="13dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/white"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/my_page_button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/report_page_button3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="내 정보"
+        android:textSize="13dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/purple_200"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

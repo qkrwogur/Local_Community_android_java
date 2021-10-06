@@ -12,6 +12,8 @@ public class my_page extends AppCompatActivity {
 
     Button main,popular,report,my_page;
     Button logout,gpsChange,myPageGo;
+    Button policy, developer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,9 @@ public class my_page extends AppCompatActivity {
         popular = findViewById(R.id.popular_page_button3);
         report =  findViewById(R.id.report_page_button3);
         my_page =  findViewById(R.id.my_page_button3);
+
+        policy = findViewById(R.id.mypage_button_policy);
+        developer = findViewById(R.id.mypage_button_developer);
 
         //액선바 없애기
         ActionBar actionBar = getSupportActionBar();
@@ -113,6 +118,22 @@ public class my_page extends AppCompatActivity {
                 overridePendingTransition(0, 0);
 
                 finish();
+            }
+        });
+
+        policy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), PolicyActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        developer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), DeveloperActivity.class);
+                startActivity(intent);
             }
         });
     }
